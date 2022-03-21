@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2A84C327E39964000BCE8F /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0B2A84C227E39964000BCE8F /* CryptoSwift */; };
 		0BB665C827DDA734005159A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB665C727DDA734005159A9 /* AppDelegate.swift */; };
 		0BB665CA27DDA734005159A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB665C927DDA734005159A9 /* SceneDelegate.swift */; };
 		0BB665CC27DDA734005159A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB665CB27DDA734005159A9 /* ViewController.swift */; };
 		0BB665CF27DDA734005159A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BB665CD27DDA734005159A9 /* Main.storyboard */; };
 		0BB665D127DDA735005159A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BB665D027DDA735005159A9 /* Assets.xcassets */; };
 		0BB665D427DDA735005159A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BB665D227DDA735005159A9 /* LaunchScreen.storyboard */; };
+		0BB665DD27DDA7E1005159A9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 0BB665DC27DDA7E1005159A9 /* RxCocoa */; };
+		0BB665DF27DDA7E1005159A9 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 0BB665DE27DDA7E1005159A9 /* RxRelay */; };
+		0BB665E127DDA7E1005159A9 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BB665E027DDA7E1005159A9 /* RxSwift */; };
+		0BB665E327DDA959005159A9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB665E227DDA959005159A9 /* LoginViewController.swift */; };
+		0BB665E527DDB130005159A9 /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB665E427DDB130005159A9 /* AddAccountViewController.swift */; };
+		0BB665EB27DDB57B005159A9 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB665EA27DDB57B005159A9 /* NetworkLayer.swift */; };
+		0BB665ED27DDBBB2005159A9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB665EC27DDBBB2005159A9 /* User.swift */; };
+		0BB665EF27DF0918005159A9 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB665EE27DF0918005159A9 /* GlobalVariables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,11 @@
 		0BB665D027DDA735005159A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BB665D327DDA735005159A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BB665D527DDA735005159A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BB665E227DDA959005159A9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0BB665E427DDB130005159A9 /* AddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
+		0BB665EA27DDB57B005159A9 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		0BB665EC27DDBBB2005159A9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0BB665EE27DF0918005159A9 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BB665E127DDA7E1005159A9 /* RxSwift in Frameworks */,
+				0B2A84C327E39964000BCE8F /* CryptoSwift in Frameworks */,
+				0BB665DF27DDA7E1005159A9 /* RxRelay in Frameworks */,
+				0BB665DD27DDA7E1005159A9 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +74,36 @@
 		0BB665C627DDA734005159A9 /* InstaThing */ = {
 			isa = PBXGroup;
 			children = (
+				0BB665E927DDB56D005159A9 /* Helpers */,
+				0BB665E627DDB28D005159A9 /* Models */,
 				0BB665C727DDA734005159A9 /* AppDelegate.swift */,
 				0BB665C927DDA734005159A9 /* SceneDelegate.swift */,
 				0BB665CB27DDA734005159A9 /* ViewController.swift */,
+				0BB665E227DDA959005159A9 /* LoginViewController.swift */,
+				0BB665E427DDB130005159A9 /* AddAccountViewController.swift */,
 				0BB665CD27DDA734005159A9 /* Main.storyboard */,
 				0BB665D027DDA735005159A9 /* Assets.xcassets */,
 				0BB665D227DDA735005159A9 /* LaunchScreen.storyboard */,
 				0BB665D527DDA735005159A9 /* Info.plist */,
 			);
 			path = InstaThing;
+			sourceTree = "<group>";
+		};
+		0BB665E627DDB28D005159A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0BB665EC27DDBBB2005159A9 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0BB665E927DDB56D005159A9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0BB665EA27DDB57B005159A9 /* NetworkLayer.swift */,
+				0BB665EE27DF0918005159A9 /* GlobalVariables.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +122,12 @@
 			dependencies = (
 			);
 			name = InstaThing;
+			packageProductDependencies = (
+				0BB665DC27DDA7E1005159A9 /* RxCocoa */,
+				0BB665DE27DDA7E1005159A9 /* RxRelay */,
+				0BB665E027DDA7E1005159A9 /* RxSwift */,
+				0B2A84C227E39964000BCE8F /* CryptoSwift */,
+			);
 			productName = InstaThing;
 			productReference = 0BB665C427DDA734005159A9 /* InstaThing.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +156,10 @@
 				Base,
 			);
 			mainGroup = 0BB665BB27DDA734005159A9;
+			packageReferences = (
+				0BB665DB27DDA7E1005159A9 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				0B2A84C127E39964000BCE8F /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+			);
 			productRefGroup = 0BB665C527DDA734005159A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BB665EB27DDB57B005159A9 /* NetworkLayer.swift in Sources */,
+				0BB665E327DDA959005159A9 /* LoginViewController.swift in Sources */,
 				0BB665CC27DDA734005159A9 /* ViewController.swift in Sources */,
+				0BB665EF27DF0918005159A9 /* GlobalVariables.swift in Sources */,
+				0BB665E527DDB130005159A9 /* AddAccountViewController.swift in Sources */,
+				0BB665ED27DDBBB2005159A9 /* User.swift in Sources */,
 				0BB665C827DDA734005159A9 /* AppDelegate.swift in Sources */,
 				0BB665CA27DDA734005159A9 /* SceneDelegate.swift in Sources */,
 			);
@@ -305,7 +359,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +386,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +412,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0B2A84C127E39964000BCE8F /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		0BB665DB27DDA7E1005159A9 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B2A84C227E39964000BCE8F /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B2A84C127E39964000BCE8F /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		0BB665DC27DDA7E1005159A9 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BB665DB27DDA7E1005159A9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		0BB665DE27DDA7E1005159A9 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BB665DB27DDA7E1005159A9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		0BB665E027DDA7E1005159A9 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BB665DB27DDA7E1005159A9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0BB665BC27DDA734005159A9 /* Project object */;
 }
