@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import RxRelay
+import WebKit
 
 class ViewController: UIViewController {
 
@@ -43,6 +44,9 @@ extension ViewController {
 
         let add = UIBarButtonItem(title: "add account", style: .done, target: self, action: #selector(openAddaccountConctroller))
         navigationItem.leftBarButtonItem = add
+
+        let out = UIBarButtonItem(title: "logout", style: .done, target: self, action: #selector(logout))
+        navigationItem.rightBarButtonItems?.append(out)
     }
     
     func setupTableView() {
@@ -76,6 +80,16 @@ extension ViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [self] in
             let vc = AddAccountViewController()
             present(vc, animated: true)
+        }
+    }
+    
+    @objc func logout() {
+        cookie = ""
+        WKWebsiteDataStore.default().fetchDataRecords(ofTypes: WKWebsiteDataStore.allWebsiteDataTypes()) { records in
+            records.forEach { record in
+                WKWebsiteDataStore.default().removeData(ofTypes: record.dataTypes, for: [record], completionHandler: {})
+                print("[WebCacheCleaner] Record \(record) deleted")
+            }
         }
     }
 }
